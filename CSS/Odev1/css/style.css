@@ -1,0 +1,74 @@
+/* GENERAL SETTINGS */
+body{
+    background-color: #e8eae6;
+    color: #484949;
+    font-family: 'Roboto', sans-serif;
+}
+
+blockquote{
+    color: #7c9473;
+}
+
+/* TITLES */
+.site-title{
+    color: #7c9473;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-title{
+    color: #28527a;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* GENERAL CLASSES */
+.text-center{
+    text-align: center;
+}
+
+.list-inside{
+    list-style-position: inside;
+}
+
+.text-brown{
+    color: #cc7351;
+}
+
+
+/* PAGE NAVIGATION */
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navigation>li{
+    margin-right: 100px;
+}
+
+.navigation>li:last-child{
+    margin-right: 0;
+}
+
+/* PRODUCTS PAGE */
+.product-section img{
+    width: 400px;
+}
+
+.product-content{
+    border: 1px solid #7c9473;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.product-name{
+    color: #cc7351;
+}
+
+.price{
+    font-size: 21px;
+    font-weight: bold;
+}
