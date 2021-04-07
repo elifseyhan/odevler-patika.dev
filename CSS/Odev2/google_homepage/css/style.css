@@ -1,0 +1,229 @@
+.header {
+  list-style-type: none;
+  margin: 10px;
+  overflow: hidden;
+  margin-right: 16px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  /* Üstteki alanı sağ tarafa almak için eklenen css - Start */
+  display: flex;
+  flex-direction: row-reverse;
+  /* Üstteki alanı sağ tarafa almak için eklenen css - End */
+}
+
+.headerli a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+.headerli a:hover {
+  text-decoration: underline;
+}
+
+/* Profil fotoğrafı için CSS - Start */
+.pic.headerli>a>img {
+  border-radius: 50%;
+}
+
+/* Profil fotoğrafı için CSS - End */
+
+.container {
+  text-align: center;
+  margin: 100px;
+}
+
+.search-area {
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  margin-top: -77px;
+  width: 582px;
+  /* Arama alanı kenar yarıçap - Start */
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  /* Arama alanı kenar yarıçap - End */
+}
+
+.search-area:hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+}
+
+.search-img {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.search-img span {
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
+
+.input-enter {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+/* Sesli Arama için ayarlar yapıldı - Start */
+
+.voiceSearch{
+  position: relative;
+}
+
+#voiceSearchButton{
+  background: url(../assets/voicelogo.png) no-repeat center;
+  background-size: 21px 21px;
+  height: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  top: 5px;
+}
+
+/* Sesli Arama için ayarlar yapıldı - End */
+
+.input-area {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  display: block;
+}
+
+.input {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -68px;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  appearance: textfield;
+  cursor: text;
+  /* Arama alanı genişlik - kenarlık - Start */
+  width: 480px;
+  border: none;
+  /* Arama alanı genişlik - kenarlık - End */
+}
+
+/* Buttonlar ortalandı ve üstten boşluk verildi - Start */
+.buttons{
+  text-align: center;
+  margin-top: 15px;
+}
+/* Buttonlar ortalandı ve üstten boşluk verildi - End */
+
+.googlesearch {
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 20px;
+}
+
+.feelinglucky {
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Butonlara border, yazı tipi, yazı rengi, yazı boyutu, yükseklik eklendi - Start */
+.googlesearch, .feelinglucky{
+  border: 1px solid #f2f2f2;
+  border-width: thick;
+  font-family: Arial, sans-serif;
+  color: #5f6368;
+  font-size: 14px;
+  height: 36px;
+}
+/* Butonlara border, yazı tipi, yazı rengi, yazı boyutu, yükseklik eklendi - End */
+
+/* Butonlara gölge verildi - Start */
+.googlesearch:hover, .feelinglucky:hover{
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+/* Butonlara gölge verildi - End */
+
+.footer {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #dfe1e5;
+  border-top: 1px solid #dadce0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -8px;
+  line-height: 10px;
+  /* Footer arkaplan rengi değiştirildi, liste noktaları kaldırıldı - Start */
+  background-color: #f2f2f2;
+  list-style: none;
+  /* Footer arkaplan rengi değiştirildi, liste noktaları kaldırıldı - End */
+}
+
+.footerli {
+  float: left;
+}
+
+.footerli a {
+  display: block;
+  color: #70757a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: -20px;
+}
+
+.footerli a:hover {
+  text-decoration: underline;
+}
