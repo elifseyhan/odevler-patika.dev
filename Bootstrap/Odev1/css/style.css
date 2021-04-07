@@ -1,0 +1,19 @@
+/* GENARAL SETTINGS */
+body{
+    background-color: #e9ecef;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* GENERAL CLASSES */
+.text-yellow{
+    color: #dead2a;
+}
+
+.text-purple{
+    color: #9e47ca;
+}
+
+/* HOME PAGE */
+.product-list{
+    list-style-position: inside;
+}
