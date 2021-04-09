@@ -46,10 +46,7 @@
   margin-top: -77px;
   width: 582px;
   /* Arama alanı kenar yarıçap - Start */
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
-  border-bottom-left-radius: 22px;
-  border-bottom-right-radius: 22px;
+  border-radius: 22px;
   /* Arama alanı kenar yarıçap - End */
 }
 
