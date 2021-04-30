@@ -1,9 +1,39 @@
 //Create li element function
+var liClose = document.getElementsByClassName("li-close");
+//Add Close Button For Li Items
+let liDOM = document.querySelectorAll("#list li");
+let closeButton = `<button type="button" class="close li-close" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>`;
+
+for (i = 0; i < liDOM.length; i++) {
+    liDOM[i].innerHTML += closeButton;
+}
+
 function createLi(text) {
     const ul = document.getElementById("list");
     const li = document.createElement('li');
     li.innerHTML = text;
     ul.appendChild(li);
+
+
+    for (let i = 0; i < liClose.length; i++) {
+        liClose[i].addEventListener("click", function () {
+            this.parentElement.remove();
+            let removedItem = this.parentElement.textContent.split("\n")[0];
+            //Delete localstage item
+            if (liArray.includes(removedItem)) {
+                let item = liArray.indexOf(removedItem);
+                console.log(item);
+                liArray.splice(item);
+                localStorage.setItem("items", JSON.stringify(liArray));
+            }
+        })
+        //Completed Todo Items
+        liClose[i].parentElement.addEventListener("click", function () {
+            this.classList.toggle("checked");
+        })
+    }
 }
 
 //localStorage
@@ -16,14 +46,7 @@ data.forEach(item => {
 });
 
 
-//Add Close Button For Li Items
-let closeButton = `<button type="button" class="close li-close" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>`;
-let liDOM = document.querySelectorAll("#list li");
-for (i = 0; i < liDOM.length; i++) {
-    liDOM[i].innerHTML += closeButton;
-}
+
 
 // Create a new element
 function newElement() {
@@ -40,7 +63,7 @@ function newElement() {
 }
 
 //Remove Todo Item with Close Button
-var liClose = document.getElementsByClassName("li-close");
+//var liClose = document.getElementsByClassName("li-close");
 for (let i = 0; i < liDOM.length; i++) {
     liClose[i].addEventListener("click", function () {
         liDOM[i].remove();
@@ -54,9 +77,7 @@ for (let i = 0; i < liDOM.length; i++) {
         }
     })
     //Completed Todo Items
-    liDOM[i].addEventListener("click", function(){
+    liDOM[i].addEventListener("click", function () {
         liDOM[i].classList.toggle("checked");
     })
 }
-
-
